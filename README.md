@@ -1,2 +1,2 @@
 # Diary-Viewer-Documentation
-This folder is to document the diary viewer generating process and help new interns learn faster. All the detailed instructions is included in the Documentation.md. There is also an sample provided in the Diary Viewer Sample filder.
+This folder is to document the diary viewer generating process and help new interns learn faster. All the detailed instructions is included in the Documentation.md. There is also an sample provided in the Diary Viewer Sample folder.
