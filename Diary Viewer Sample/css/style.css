@@ -1,0 +1,269 @@
+/* Hides title of page */
+.entry-header {
+    font-size: 0px
+    }
+    
+    h2 {
+       font-size: 20px;
+       margin: 1.4rem 0 1rem 0;
+    }
+    
+    h1 {
+       font-size: 20px;
+    }
+    .centered{
+    font-size: 16px;
+    }
+    
+    button {
+      padding: 0em 0em;
+      border: transparent;
+    }
+    
+    /* Change the number (xxxx) after .page-id- to match the number after post= in the url to hide the footer */
+    .page-id-6618 .footer-widget-area {
+    background-color: transparent;
+    }
+    .page-id-6618 .site-footer { display: none;
+    }
+    /* Split the screen in half */
+    .split {
+     height: 100%;
+     width: 50%;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     overflow-x: scroll;
+     padding-top: 10px;
+    
+    }
+    
+    /* Control the left side */
+    .left {
+     margin-top:20px;
+     padding-left:0px;
+     left: 0;
+     z-index:100;
+    }
+    .left::-webkit-scrollbar {
+     display: none;
+    }
+    /* Control the right side */
+    .right {
+     margin-left: 20px;
+       padding-left: 20px;
+     right: 0;
+     z-index:50;
+    }
+    
+    /* If you want the content centered horizontally and vertically */
+    .centered {
+       position: absolute;
+       text-align: left;
+    }
+    
+     .tooltip {
+         position: relative;
+         color: red;
+     }
+    
+    .tooltip .tooltiptext {
+       visibility: hidden;
+       font-size: 10pt;
+       background-color: #f2eddc;
+       color: black;
+       border-radius: 6px;
+       padding: 5px 10px;
+       display: inline-block;
+       position: absolute;
+       float: right;
+       z-index: 1;
+    }
+    
+     .tooltip:hover .tooltiptext {
+         visibility: visible;
+     }
+    
+     .header {
+       padding: 20px 10px 10px 10px;
+       background: #fbefdc;
+       color: black;
+       position: fixed;
+       z-index: 999;
+       width: 50%
+     }
+    
+     .transcription {
+       padding-left: 40px;
+     }
+    
+     #closeButton {
+        font-size: 15px; 
+        float:right;
+        display:inline-block;
+        padding:2px 15px;
+        background:#ccc;
+     }
+    
+     #closeButton:hover {
+        font-size: 15px;
+        float: right;
+        display:inline-block;
+        padding:2px 15px;
+        background:#ccc;
+        color:#fff;
+        }
+    
+     #button {
+        font-size: 15px;
+        float: right;
+        display:inline-block;
+        padding: 0px 8px 0px 8px;
+        background:white;
+        box-shadow: 0 0 3px 0 #9B9B9B;
+        border-radius: 4px;
+        }
+    
+     #modalWindow {
+       position: fixed;
+       font-family: arial,helvetica, sans-serif;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       background: rgba(0, 0, 0, 0.4);
+       z-index: 99999;
+       opacity:0;
+       transition: opacity 400ms linear;
+       pointer-events: none;
+     }
+     #modalWindow:target {
+       opacity:1;
+       pointer-events: auto;
+     }
+     #modalWindow > div {
+       width: 1000px;
+       height: 500px;
+       position: relative;
+       margin: 10% auto;
+       padding: 20px 20px 13px 20px;
+       border: solid;
+       border-color: black;
+       border-width : 2px;
+       background: white;
+       border-radius: 10px;
+       overflow-y: auto;
+     }
+    
+     #modalWindow1 {
+       position: fixed;
+       font-family: arial,helvetica, sans-serif;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       background: rgba(0, 0, 0, 0.4);
+       z-index: 99999;
+       opacity:0;
+       transition: opacity 400ms linear;
+       pointer-events: none;
+     }
+     #modalWindow1:target {
+       opacity:1;
+       pointer-events: auto;
+     }
+     #modalWindow1 > div {
+       width: 1000px;
+       height: 150px;
+       position: relative;
+       margin: 10% auto;
+       padding: 20px 20px 13px 20px;
+       border: solid;
+       border-color: black;
+       border-width : 2px;
+       background: white;
+       border-radius: 10px;
+       overflow-y: auto;
+     }
+     
+     .switch {
+       position: relative;
+       display: inline-block;
+       width: 40px;
+       height: 26px;
+     }
+     
+     .switch input {display:none;}
+     
+     .slider1 {
+       position: absolute;
+       cursor: pointer;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 5px;
+       background-color: #9B9B9B;
+       -webkit-transition: .4s;
+       transition: .4s;
+     }
+     
+     .slider1:before {
+       position: absolute;
+       content: "";
+       height: 26px;
+       width: 26px;
+       bottom: -2.5px;
+       background-color: white;
+       -webkit-transition: .4s;
+       transition: .4s;
+     }
+     
+     input:checked + .slider1 {
+       background-color: #a2352f;
+     }
+     
+     input:focus + .slider1 {
+       box-shadow: 0 0 1px #2196F3;
+     }
+     
+     input:checked + .slider1:before {
+       -webkit-transform: translateX(15px);
+       -ms-transform: translateX(15px);
+       transform: translateX(15px);
+     }
+     
+     /*------ ADDED CSS ---------*/
+     .on
+     {
+       display: none;
+     }
+     
+     .on, .off
+     {
+       color: white;
+       position: absolute;
+       transform: translate(-50%,-50%);
+       top: 50%;
+       left: 50%;
+       font-size: 12px;
+       font-family: Roboto, sans-serif;
+     }
+     
+     input:checked+ .slider1 .on
+     {display: block;}
+     
+     input:checked + .slider1 .off
+     {display: none;}
+     
+     /*--------- END --------*/
+     
+     /* Rounded sliders */
+     .slider1.round {
+       border-radius: 34px;
+    
+     }
+     
+     .slider1.round:before {
+       border-radius: 50%;
+       box-shadow: 0 0 3px 0 #9B9B9B;
+     }
