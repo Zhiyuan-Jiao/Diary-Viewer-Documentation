@@ -1,12 +1,3 @@
-o = open("output.txt", "a", encoding="utf8")  # open for append
-x = 1
-for line in open("input.txt", encoding="utf8"):
-    if line.startswith("   <span class=\"pb\">"):
-        line =  "<a style=\"padding-top: 50vh\" id = \"a" + str(x) + "\"></a>" + line
-        x = x + 1
-    o.write(line)
-o.close()
-
 import re
 o = open("output.txt", "a", encoding="utf8")  # open for append
 anchorNum = 1
@@ -27,5 +18,14 @@ for line in open("input.txt", encoding="utf8"):
         anchorNum = anchorNum + 1
     if re.match(a, line):
         line = ""
+    o.write(line)
+o.close()
+
+o = open("output.txt", "a", encoding="utf8")  # open for append
+x = 1
+for line in open("input.txt", encoding="utf8"):
+    if line.startswith("   <span class=\"pb\">"):
+        line =  "<a style=\"padding-top: 50vh\" id = \"a" + str(x) + "\"></a>" + line
+        x = x + 1
     o.write(line)
 o.close()
